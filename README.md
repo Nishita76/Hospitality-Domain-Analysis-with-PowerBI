@@ -25,19 +25,19 @@ You are a data analyst who has been provided with sample data and a mock-up dash
   ## *Dashboard images* 
 
   Dashboard 1: Revenue Performance & KPI Analysis
-
+  ![Test Image 1](https://github.com/Nishita76/Hospitality-Domain-Analysis-with-PowerBI/blob/main/Dashboard%20images/Dashboard1.png)
 
   Dashboard 2: Market Trend & Customer Insights Dashboard
-
+  ![Test Image 1](https://github.com/Nishita76/Hospitality-Domain-Analysis-with-PowerBI/blob/main/Dashboard%20images/Dashboard2.png)
 
   Dashboard 3: Booking Behavior & Operational Efficiency
+  ![Test Image 1](https://github.com/Nishita76/Hospitality-Domain-Analysis-with-PowerBI/blob/main/Dashboard%20images/Dashboard3.png)
 
   ## *Key Insights*
 
 - Mumbai generates the highest revenue (669 M) followed by Bangalore, Hyderabad and Delhi
 - AtliQ Exotica performs better compared to all 7 type of properties with 320 Million revenue, rating 3.62, occupancy percentage 57 and cancellation rate as 24.4%.
 - AtliQ Bay has the highest occupancy of 66%
-- Week 24 recorded the highest revenue among all, which is 139.6 Million
 - Delhi tops both in occupancy and rating followed by Hyderabad, Mumbai, Bangalore
 - AtliQ lost around 298 Million in cancellation
 - Elite type rooms has the most booking and as well higher cancellation rate
