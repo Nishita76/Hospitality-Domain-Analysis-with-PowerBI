@@ -14,6 +14,20 @@ You are a data analyst who has been provided with sample data and a mock-up dash
 
 ### What I learned:
 
+- Excel Integration
+  Performed initial data cleaning and calculations using Excel/Google Sheets before dashboarding. Key formulas used:
+
+  =IF([@booking_status]="Cancelled", [@revenue_generated], 0) → to calculate Revenue Loss
+
+  =VLOOKUP([@property_id], HotelsTable[#All], 2, FALSE) → to fetch City Name from property ID
+
+  =AVERAGEIFS([revenue_generated], [city_column], "Delhi") → to get average revenue per city
+
+  Applied custom number formatting (e.g., for average ratings).
+
+  Built Pivot Tables for metrics like occupancy %, cancellation rate, revenue trends.
+
+  Used slicers to filter data by City, Room Type, and Booking Platform for deeper insights.
 - The data was provided in csv format files for Hotels, Rooms and bookings. The data was checked and cleaned, and tranformations were performed to create calculated columns and measures with common functions and formulas.
 -Build a relational data model, creating active relations between tables and understanding cardinality and filter flow.
 - Designed interactive dashboards to visualize data using charts and visuals. 
