@@ -14,7 +14,8 @@ You are a data analyst who has been provided with sample data and a mock-up dash
 
 ### What I learned:
 
-- Excel Integration
+- Excel Integration:
+
   Performed initial data cleaning and calculations using Excel/Google Sheets before dashboarding. Key formulas used:
 
   =IF([@booking_status]="Cancelled", [@revenue_generated], 0) → to calculate Revenue Loss
