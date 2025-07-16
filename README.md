@@ -16,19 +16,22 @@ You are a data analyst who has been provided with sample data and a mock-up dash
 
 - Excel Integration:
 
-  Performed initial data cleaning and calculations using Excel/Google Sheets before dashboarding. Key formulas used:
+  In addition to Power BI dashboards, I used **Excel** for preliminary cleaning, analysis, and feature creation using key formulas:
 
-  =IF([@booking_status]="Cancelled", [@revenue_generated], 0) → to calculate Revenue Loss
-
-  =VLOOKUP([@property_id], HotelsTable[#All], 2, FALSE) → to fetch City Name from property ID
-
-  =AVERAGEIFS([revenue_generated], [city_column], "Delhi") → to get average revenue per city
-
-  Applied custom number formatting (e.g., for average ratings).
+| Column/Metric              | Description                                 | Formula Used                                                             |
+|----------------------------|---------------------------------------------|--------------------------------------------------------------------------|
+| **Hotel Name**             | Mapped `property_id` to hotel names         | `=VLOOKUP([@property_id], Hotels!A:D, 2, FALSE)`                         |
+| **City**                   | Added city info from `dim_hotels.csv`       | `=VLOOKUP([@property_id], Hotels!A:D, 4, FALSE)`                         |
+| **Room Type**              | Fetched room type from `dim_rooms.csv`      | `=VLOOKUP([@room_id], Rooms!A:C, 2, FALSE)`                              |
+| **Length of Stay**         | Days between check-in and checkout          | `=([@checkout_date]-[@check_in_date])`                                   |
+| **Avg Revenue per Night**  | Normalized revenue across stay              | `=[@revenue_realized] / [@Length_of_Stay]`                               |
+| **Cleaned Ratings**        | Removed empty/null ratings                  | Used filters or `IFERROR`/manual imputation                              |
+| **Revenue Loss**           | Captured loss on cancelled bookings         | `=IF([@booking_status]="Cancelled", [@revenue_generated], 0)`            |
 
   Built Pivot Tables for metrics like occupancy %, cancellation rate, revenue trends.
 
   Used slicers to filter data by City, Room Type, and Booking Platform for deeper insights.
+  
 - The data was provided in csv format files for Hotels, Rooms and bookings. The data was checked and cleaned, and tranformations were performed to create calculated columns and measures with common functions and formulas.
 -Build a relational data model, creating active relations between tables and understanding cardinality and filter flow.
 - Designed interactive dashboards to visualize data using charts and visuals. 
